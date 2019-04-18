@@ -63,9 +63,7 @@ pipeline {
       }
     }
     
-    
-   
-    stage('Staging Warm Up') {
+          stage('Staging Warm Up') {
       steps {
         echo "Waiting for the service to start..."
         container('kubectl') {
